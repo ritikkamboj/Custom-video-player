@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Video Player</title>
+    <script
+      src="https://kit.fontawesome.com/baa5380a81.js"
+      defer
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/progress.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <h1>Custom Video Player</h1>
+    <video
+      controls
+      src="/videos/gone.mp4"
+      poster="/img/poster.png"
+      id="video"
+      class="screen"
+    ></video>
+    <div class="controls">
+      <button id="play" class="btn">
+        <i class="fa fa-play fa-2x"></i>
+      </button>
+      <button id="stop" class="btn">
+        <i class="fa fa-stop fa-2x"></i>
+      </button>
+      <input type="range"  id="progress" class="progress" max="100" min="0" range="0,.1" value="0" >
+      <span id="timestamp" class="timestamp">00:00</span>
+    </div>
+  </body>
+</html>
